@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  line-height: 1.4;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+.btn {
+  display: inline-block;
+  background: #5eb6b6;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+.page-body {
+  position: absolute;
+}
+.intro {
+  /* padding-bottom: 1.5rem; */
+  animation: moveLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.text-secondary {
+  color: #5eb6b6;
+}
+.text-white {
+  color: #fff;
+}
+.container {
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+#navbar {
+  background-color: rgba(0, 0, 0, 0.411);
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 15px;
+  z-index: 1;
+}
+#navbar .logo {
+  position: absolute;
+  left: 1.5rem;
+  color: #fff;
+}
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.75rem;
+}
+
+#hero {
+  background-image: url(./img/hero.jpg);
+  background-position: center;
+  height: 95vh;
+  position: relative;
+  /* margin-top: -57px; */
+}
+#hero .text-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  /* Overlay */
+  /* position: absolute; */
+  /* top: 65px; */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#hero .text-box p {
+  /* font-size: 2rem; */
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+#hero h2 {
+  color: #fff;
+  font-size: 2.4rem;
+}
+#about {
+  padding: 11rem 4rem;
+}
+#about .title-container {
+  /* font-size: 1.8rem; */
+  margin: auto;
+  text-align: center;
+}
+#about .items {
+  display: flex;
+}
+#who {
+  display: flex;
+}
+#who .who-img {
+  background-image: url(./img/nat-1-large.jpg);
+  width: 50vw;
+  height: 60vh;
+}
+
+#who .who-text-box {
+  background-color: #5eb6b6;
+  width: 50vw;
+  height: 60vh;
+}
+#contact {
+  min-height: 20rem;
+}
