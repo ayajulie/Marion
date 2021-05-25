@@ -1,22 +1,141 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
 }
 html {
-  font-size: 62.5%;
+	font-size: 62.5%;
 }
+
 body {
-  line-height: 1.4;
-  font-size: 1.6rem;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	background: #fff;
+	color: #333;
+	line-height: 1.6rem;
+	box-sizing: border-box;
 }
-
+ul {
+	list-style: none;
+}
 a {
-  text-decoration: none;
+	color: #333;
+	text-decoration: none;
+}
+h1,
+h2 {
+	line-height: 1.2;
 }
 
-.py-1 {
+img {
+	width: 100%;
+}
+
+.header {
+  background-image: url(/img/hero-bridge.jpg);
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.heading{
+  background-color:#000000;
+  color: white;
+}
+.headding__primary{
+  font-family: 'nunito', sans-serif;
+  padding: 2rem 6rem;
+  
+}
+.headding-primary--main{
+  display: block;
+  font-size: 2vw;
+  text-align: right;
+  padding-bottom: 2rem;
+}
+
+.headding-primary--sub{
+  font-size: 8vw;
+  letter-spacing: 3rem;
+  text-indent: 3rem;
+  text-transform: uppercase;
+}
+
+.nav-links{
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+}
+
+ul li{
+  margin-right: 2rem;
+}
+
+ul li a {
+  color: white;
+}
+.gallery{
+  display: flex;
+}
+.photo-box{
+  position: relative;
+  width: 50%;
+}
+
+.picture{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay{
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #ffffff94;;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.photo-box:hover .overlay{
+  bottom: 0;
+  height: 100%;
+}
+
+.title {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  letter-spacing: 1rem;
+  font-size: 2vw;
+}
+
+.footer{
+  background-color: black;
+  color: white;
+}
+.footer__text {
+  display: block;
+  padding: 3rem ;
+text-align: center;
+letter-spacing: .3rem;
+}
+/* .py-1 {
   padding: 1.5rem 0;
 }
 .py-2 {
@@ -43,7 +162,7 @@ a {
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
 }
-@keyframes moveLeft {
+/* @keyframes moveLeft {
   0% {
     opacity: 0;
     transform: translateX(-100px);
@@ -100,6 +219,7 @@ a {
   position: relative;
   /* margin-top: -57px; */
 }
+
 #hero .text-box {
   display: flex;
   flex-direction: column;
@@ -153,4 +273,4 @@ a {
 }
 #contact {
   min-height: 20rem;
-}
+} */ */

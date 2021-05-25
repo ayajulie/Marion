@@ -5,79 +5,62 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" media="screen and (max-width: 768px)" href="./media/mobile.css">
-  <!-- <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css"> -->
-  <!-- <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css"> -->
   <title>Boucle d'Or</title>
 </head>
 
 <body>
-  <section class="page-body">
-
-
-    <!-- navbar -->
-    <nav id="navbar">
-      <h1 class="logo">
-        <span class="text-primary">
-          <i class="fas fa-book-open"></i> Edge</span>Ledger
+  <header class="header">
+  </header>
+  <section class="heading">
+    <div class="heading__text">
+      <h1 class="headding__primary">
+        <span class="headding-primary--main">Marion COMITOGIANNI</span>
+        <span class="headding-primary--sub">Photographie</span>
       </h1>
-      <ul>
-        <li><a href="#" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">À propos</a></li>
-        <li><a href="#who" class="nav-link">Qui sommes-nous</a></li>
-        <li><a href="#contact" class="nav-link">Nous contacter</a></li>
+    </div>
+    <nav>
+
+      <ul class="nav-links">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">à propos</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Gallerie</a></li>
+        <li><a href="#">Instagram</a></li>
       </ul>
     </nav>
-
-    <!-- hero section -->
-    <header id="hero">
-      <div class="text-box">
-        <h2 class="">Some text</h2>
-        <p class="text-white intro py-2">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-        <a href="#about" class="btn btn-primary">Read more</a>
-      </div>
-    </header>
-
-
-    <!-- about section -->
-    <section id="about">
-      <div class="title-container">
-        <h2><span class=text-secondary>What</span> we do</h2>
-      </div>
-      <div class="container">
-        <div class="items">
-          <div class="item">
-            <h3 class="text-secondary">First Item</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis quidem non laboriosam, optio in quasi.
-            </p>
-          </div>
-          <div class="item">
-            <h3 class="text-secondary">Second Item</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis quidem non laboriosam, optio in quasi.
-            </p>
-          </div>
-          <div class="item">
-            <h3 class="text-secondary">Third Item</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis quidem non laboriosam, optio in quasi.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="who">
-      <div class="who-img"></div>
-      <div class="container who-text-box">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis quidem non laboriosam, optio in quasi.</p>
-      </div>
-    </section>
-    <section id="contact">
-      <h2>Some text</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis quidem non laboriosam, optio in quasi.</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis quidem non laboriosam, optio in quasi.</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis quidem non laboriosam, optio in quasi.</p>
-    </section>
   </section>
+
+  <section class="gallery">
+    <div class="photo-box"> <a href="#"><img class="picture" src="/img/portrait1.jpg" alt="">
+        <div class="overlay">
+          <div class="title">Videos</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="photo-box"><a href="#"><img class="picture" src="/img/portrait2.jpg" alt="">
+        <div class="overlay">
+          <div class="title">Mariages</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="photo-box"><a href="#"><img class="picture" src="/img/portrait3.jpg" alt="">
+        <div class="overlay">
+          <div class="title">Portfolio</div>
+        </div>
+      </a>
+    </div>
+  </section>
+  <footer class="footer">
+    <p class=footer__text>&copy;Marion Comitogianni. Tous droits réservés</p>
+  </footer>
+
 </body>
 
 </html>
