@@ -5,7 +5,7 @@
 	padding: 0;
 	box-sizing: inherit;
 }
-}
+
 html {
 	font-size: 62.5%;
 }
@@ -45,23 +45,24 @@ img {
   background-color:#000000;
   color: white;
 }
-.headding__primary{
+.heading__text{
+  text-align: center;
+}
+.heading__primary{
   font-family: 'nunito', sans-serif;
-  padding: 2rem 6rem;
   
 }
-.headding-primary--main{
-  display: block;
+.heading__primary--main{
   font-size: 2vw;
-  text-align: right;
+  /* text-align: right; */
   padding-bottom: 2rem;
 }
 
-.headding-primary--sub{
+.heading__primary--sub{
   font-size: 8vw;
   letter-spacing: 3rem;
-  text-indent: 3rem;
   text-transform: uppercase;
+
 }
 
 .nav-links{
@@ -80,7 +81,9 @@ ul li{
 
 ul li a {
   color: white;
+  font-size: 1.8rem;
 }
+
 .gallery{
   display: flex;
 }
@@ -99,7 +102,7 @@ ul li a {
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: #ffffff94;;
+  background-color: #ffffff94;
   overflow: hidden;
   width: 100%;
   height:0;
@@ -115,7 +118,7 @@ ul li a {
   color: black;
   font-size: 20px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -131,9 +134,10 @@ ul li a {
 }
 .footer__text {
   display: block;
-  padding: 3rem ;
+  padding: 4rem ;
 text-align: center;
 letter-spacing: .3rem;
+font-size: 1.5rem;
 }
 /* .py-1 {
   padding: 1.5rem 0;
