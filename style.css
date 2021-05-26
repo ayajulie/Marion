@@ -11,8 +11,8 @@ html {
 }
 
 body {
-	font-family: "Open Sans", sans-serif;
-	font-weight: 300;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 100;
 	background: #fff;
 	color: #333;
 	line-height: 1.6rem;
@@ -46,22 +46,27 @@ img {
   color: white;
 }
 .heading__text{
-  text-align: center;
+  text-align: right;
+  padding: 4rem 0;
 }
 .heading__primary{
+  margin-right: 15rem;
   font-family: 'nunito', sans-serif;
   
 }
 .heading__primary--main{
   font-size: 2vw;
-  /* text-align: right; */
+  display: block;
   padding-bottom: 2rem;
 }
 
 .heading__primary--sub{
+  display: block;
   font-size: 8vw;
   letter-spacing: 3rem;
+  margin-right: -3rem;
   text-transform: uppercase;
+  padding-bottom: 2rem;
 
 }
 
@@ -95,7 +100,7 @@ ul li a {
 .picture{
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 .overlay{
   position: absolute;
